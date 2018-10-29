@@ -49,6 +49,7 @@ export default class Personnel extends React.Component {
     <body class="masthead">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Ajouter un employé</h2>
             <Form>
         <FormGroup>
           <Label for="ID">ID</Label>

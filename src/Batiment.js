@@ -49,7 +49,8 @@ export default class Batiment extends React.Component {
     <body class="masthead">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-            <Form>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Ajouter un batiment</h2>
+        <Form>
             <FormGroup>
             <Label for="ID">ID</Label>
             <Input type="number" name="ID" id="ID" placeholder="Ex : 12" />
@@ -58,7 +59,7 @@ export default class Batiment extends React.Component {
             <Label for="Nom">Nom</Label>
             <Input type="Nom" name="Nom" id="Nom" placeholder="Ex : Toilettes" />
             </FormGroup>
-            <FormGroup> 
+            <FormGroup>
             <Label for="exampleDate">Date</Label>
             <Input type="date" name="date" id="exampleDate" placeholder="12/05/2017" />
             </FormGroup>
