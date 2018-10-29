@@ -6,7 +6,7 @@ import './css/grayscale.css';
 import './css/grayscale.min.css';
 require('bootstrap');
 
-export default class Statistique extends React.Component {
+export default class Accueil extends React.Component {
   render() {
     return (
         <div className="App">
@@ -16,6 +16,7 @@ export default class Statistique extends React.Component {
         </header>
        
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  
       <div class="container">
       
         <a class="navbar-brand js-scroll-trigger"><Link to="/Accueil" style={{ color: '#FFF' }}> Accueil </Link></a>
@@ -42,41 +43,24 @@ export default class Statistique extends React.Component {
             <a class="nav-link js-scroll-trigger" ><Link to="/Statistiques" style={{ color: '#FFF' }}> Statistiques </Link></a>
             </li>
           </ul>
-        </div>
+
+          </div>
       
       </div>
+    
     </nav>
     <body class="masthead">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-            <div class="container" >
-      <Form>
-        <FormGroup>
-          <Label for="ID">ID</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 12" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleDate">Date</Label>
-          <Input type="date" name="date" id="exampleDate" placeholder="12/05/2017" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="ID">Nombre de visiteur sur la journée</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 453" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="ID">Recette de la journée €</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 12635" />
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form>
-      </div>
+            <div class="container">
+            <h1 class="mx-auto my-0 text-uppercase">LibertyLand</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Interface de gestion du parc.</h2>
+        </div>
+            
             </div>
         </div>
         </body>
   </div>
-    
-    
-      
     );
   }
 }
