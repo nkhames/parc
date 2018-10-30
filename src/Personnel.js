@@ -1,6 +1,7 @@
 import React, { Component} from 'react'; 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {BrowserRouter, Route, Link, Switch, Redirect} from 'react-router-dom';
+import {Table} from 'reactstrap';
 import './App.css';
 import './css/grayscale.css';
 import './css/grayscale.min.css';
@@ -50,33 +51,44 @@ export default class Personnel extends React.Component {
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
             <h2 class="text-white-50 mx-auto mt-2 mb-5">Ajouter un employé</h2>
-            <Form>
-        <FormGroup>
-          <Label for="ID">ID</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 12" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Nom">Nom</Label>
-          <Input type="Nom" name="Nom" id="Nom" placeholder="Ex : Dupont" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Prénom">Prénom</Label>
-          <Input type="Prénom" name="Prénom" id="Prénom" placeholder="Prénom" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Age">Age</Label>
-          <Input type="number" name="number" id="ID" placeholder="Ex : 24" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Fonction">Fonction</Label>
-          <Input type="Fonction" name="Fonction" id="Fonction" placeholder="Ex : Jardinier" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Salaire">Salaire</Label>
-          <Input type="number" name="Salaire" id="Salaire" placeholder="Ex : 24000" />
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form>
+            <Table responsive striped bordered condensed hover>
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Age</th>
+                <th>Fonction</th>
+                <th>Salaire</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Dupont</td>
+                <td>Jean</td>
+                <td>38</td>
+                <td>Technicien</td>
+                <td>32000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Dupuis</td>
+                <td>Mathieu</td>
+                <td>42</td>
+                <td>Technicien</td>
+                <td>34000</td>
+                </tr>
+             <tr>
+                <td>3</td>
+                <td>Lerue</td>
+                <td>Arthur</td>
+                <td>27</td>
+                <td>Technicien</td>
+                <td>30000</td>
+                </tr>
+            </tbody>
+          </Table>
             </div>
         </div>
         </body>

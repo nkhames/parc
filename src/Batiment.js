@@ -1,6 +1,7 @@
 import React, { Component} from 'react'; 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {BrowserRouter, Route, Link, Switch, Redirect} from 'react-router-dom';
+import {Table} from 'reactstrap';
 import './App.css';
 import './css/grayscale.css';
 import './css/grayscale.min.css';
@@ -49,22 +50,33 @@ export default class Batiment extends React.Component {
     <body class="masthead">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">Ajouter un batiment</h2>
-        <Form>
-            <FormGroup>
-            <Label for="ID">ID</Label>
-            <Input type="number" name="ID" id="ID" placeholder="Ex : 12" />
-            </FormGroup>
-            <FormGroup>
-            <Label for="Nom">Nom</Label>
-            <Input type="Nom" name="Nom" id="Nom" placeholder="Ex : Toilettes" />
-            </FormGroup>
-            <FormGroup>
-            <Label for="exampleDate">Date</Label>
-            <Input type="date" name="date" id="exampleDate" placeholder="12/05/2017" />
-            </FormGroup>
-            <Button>Submit</Button>
-        </Form>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Batiment</h2>
+            <Table responsive striped bordered condensed hover>
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Nom</th>
+                <th>Date d'installation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>03/11/2015</td>
+                <td>478</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>05/12/2015</td>
+                <td>523</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>23/02/2016</td>
+                <td>365</td>
+              </tr>
+            </tbody>
+          </Table>
             </div>
         </div>
         </body>

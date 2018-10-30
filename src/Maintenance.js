@@ -1,6 +1,7 @@
 import React, { Component} from 'react'; 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {BrowserRouter, Route, Link, Switch, Redirect} from 'react-router-dom';
+import {Table} from 'reactstrap';
 import './App.css';
 import './css/grayscale.css';
 import './css/grayscale.min.css';
@@ -49,30 +50,41 @@ export default class Maintenance extends React.Component {
     <body class="masthead">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">Ajouter une maintenance</h2>
-            <Form>
-        <FormGroup>
-          <Label for="ID">ID</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 12" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleDate">Date de la dernière maintenance</Label>
-          <Input type="date" name="date" id="exampleDate" placeholder="12/05/2017" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleDate">Date de la prochaine maintenance</Label>
-          <Input type="date" name="date" id="exampleDate" placeholder="12/05/2017" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="ID">ID de l'attraction associée</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 4" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="ID">ID du technicien associé</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 23" />
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Maintenance</h2>
+            <Table responsive striped bordered condensed hover>
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Date de la dernière maintenance</th>
+                <th>Date de la prochaine maintenance</th>
+                <th>Attraction associé</th>
+                <th>Technicien associé</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>29/10/2018</td>
+                <td>30/10/2018</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>27/10/2018</td>
+                <td>29/10/2018</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+              <td>2</td>
+                <td>24/10/2018</td>
+                <td>27/10/2018</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </Table>
             </div>
         </div>
         </body>

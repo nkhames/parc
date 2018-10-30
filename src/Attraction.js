@@ -1,6 +1,7 @@
 import React, { Component} from 'react'; 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {BrowserRouter, Route, Link, Switch, Redirect} from 'react-router-dom';
+import {Table} from 'reactstrap';
 import './App.css';
 import './css/grayscale.css';
 import './css/grayscale.min.css';
@@ -49,26 +50,37 @@ export default class Attraction extends React.Component {
     <body class="masthead">
             <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">Ajouter une attraction</h2>
-            <Form>
-        <FormGroup>
-          <Label for="ID">ID</Label>
-          <Input type="number" name="ID" id="ID" placeholder="Ex : 12" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Nom">Nom</Label>
-          <Input type="Nom" name="Nom" id="Nom" placeholder="Ex : Le grand Tour" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleDate">Date</Label>
-          <Input type="date" name="date" id="exampleDate" placeholder="date placeholder" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="Prix">Prix d'entrée €</Label>
-          <Input type="number" name="Prix" id="Prix" placeholder="Ex : 15" />
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Attraction</h2>
+            <Table responsive striped bordered condensed hover>
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Nom</th>
+                <th>Date d'installation</th>
+                <th>Prix de l'entrée €</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Le gouffre</td>
+                <td>15/04/2016</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Le cou de la giraffe</td>
+                <td>27/03/2017</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Les montagnes de la muerte</td>
+                <td>16/05/2018</td>
+                <td>13</td>
+              </tr>
+            </tbody>
+          </Table>
             </div>
         </div>
         </body>
