@@ -6,6 +6,11 @@ import Batiment from './Batiment.js'
 import Maintenance from './Maintenance.js'
 import Personnel from './Personnel.js'
 import Accueil from './Accueil.js'
+import Statistique_form from './Statistique_form.js'
+import Attraction_form from './Attraction_form.js'
+import Batiment_form from './Batiment_form.js'
+import Maintenance_form from './Maintenance_form.js'
+import Personnel_form from './Personnel_form.js'
 import $ from 'jquery';
 import Popper from 'popper.js';
 import React from 'react';
@@ -36,6 +41,21 @@ ReactDOM.render(
           </Switch>
           <Switch>
           <Route exact path="/Personnel" component={Personnel}/>
+          </Switch>
+          <Switch>
+          <Route exact path="/Statistique_form" component={Statistique_form}/>
+          </Switch>
+          <Switch>
+          <Route exact path="/Attraction_form" component={Attraction_form}/>
+          </Switch>
+          <Switch>
+          <Route exact path="/Batiment_form" component={Batiment_form}/>
+          </Switch>
+          <Switch>
+          <Route exact path="/Maintenance_form" component={Maintenance_form}/>
+          </Switch>
+          <Switch>
+          <Route exact path="/Personnel_form" component={Personnel_form}/>
           </Switch>
           </div>
         </BrowserRouter>, 

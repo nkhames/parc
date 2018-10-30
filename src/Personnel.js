@@ -89,6 +89,7 @@ export default class Personnel extends React.Component {
                 </tr>
             </tbody>
           </Table>
+          <a class="nav-link js-scroll-trigger"><Link to="/Personnel_form" style={{ color: '#FFF' }}> Ajouter Personnel </Link></a>
             </div>
         </div>
         </body>

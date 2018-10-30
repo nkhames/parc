@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {BrowserRouter, Route, Link, Switch, Redirect} from 'react-router-dom';
 import {Table} from 'reactstrap';
+import Statistique_form from './Statistique_form.js'
 import './App.css';
 import './css/grayscale.css';
 import './css/grayscale.min.css';
@@ -82,6 +83,8 @@ export default class Statistique extends React.Component {
               </tr>
             </tbody>
           </Table>
+          <a class="nav-link js-scroll-trigger"><Link to="/Statistique_form" style={{ color: '#FFF' }}> Ajouter Statistique </Link></a>
+            
       </div>
             </div>
         </div>

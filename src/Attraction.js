@@ -81,6 +81,7 @@ export default class Attraction extends React.Component {
               </tr>
             </tbody>
           </Table>
+          <a class="nav-link js-scroll-trigger"><Link to="/Attraction_form" style={{ color: '#FFF' }}> Ajouter Attraction </Link></a>
             </div>
         </div>
         </body>

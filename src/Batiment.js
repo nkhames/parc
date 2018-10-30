@@ -77,6 +77,7 @@ export default class Batiment extends React.Component {
               </tr>
             </tbody>
           </Table>
+          <a class="nav-link js-scroll-trigger"><Link to="/Batiment_form" style={{ color: '#FFF' }}> Ajouter Batiment </Link></a>
             </div>
         </div>
         </body>

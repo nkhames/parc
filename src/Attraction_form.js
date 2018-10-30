@@ -6,7 +6,7 @@ import './css/grayscale.css';
 import './css/grayscale.min.css';
 require('bootstrap');
 
-export default class Attraction extends React.Component {
+export default class Attraction_form extends React.Component {
   render() {
     return (
         <div className="App">

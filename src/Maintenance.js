@@ -85,6 +85,7 @@ export default class Maintenance extends React.Component {
               </tr>
             </tbody>
           </Table>
+          <a class="nav-link js-scroll-trigger"><Link to="/Maintenance_form" style={{ color: '#FFF' }}> Ajouter Maintenance </Link></a>
             </div>
         </div>
         </body>
